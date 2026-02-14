@@ -1,13 +1,17 @@
 # Handwriting Classifier
 This project is a multi-class Machine Learning (ML) system that classifies handwritten uppercase and lowercase English alphabets (A-Z and a-z) using Logistic Regression on a custom self-handwritten dataset.
 
-## Python Libraries Used
-1. NumPy (numpy): NumPy is used for efficient numerical array operations and to represent image pixel data as feature vectors.
-2. OpenCV (cv2): OpenCV is used for image preprocessing operations such as grayscale conversion, resizing, and decoding uploaded images.
-3. Scikit-learn (sklearn): Scikit-learn is used to implement multinomial Logistic Regression for 52-class classification and to evaluate model accuracy.
-4. Joblib (joblib): Joblib is used for model persistence so that the trained model is saved and reused without retraining.
-5. Streamlit (streamlit): Streamlit is used to build a lightweight graphical interface for uploading images and displaying predictions.
-6. OS (os): The OS module is used for directory traversal and file management operations.
+## Libraries Used
+1. NumPy (numpy): NumPy is a Python library used for efficient numerical array operations and to represent image pixel data as feature vectors.
+2. OpenCV (cv2): OpenCV is a Python library used for image preprocessing operations such as grayscale conversion, resizing, and decoding uploaded images.
+3. Scikit-learn (sklearn): Scikit-learn is a Python library used to implement multinomial Logistic Regression for 52-class classification and to evaluate model accuracy.
+4. Joblib (joblib): Joblib is a Python library used for model persistence so that the trained model is saved and reused without retraining.
+5. Streamlit (streamlit): Streamlit is a Python library used to build a lightweight graphical interface for uploading images and displaying predictions.
+6. OS (os): The OS module is a Python library used for directory traversal and file management operations.
+
+## Software Used
+1. Visual Studio Code (Insiders): IDE used for development of this ML system
+2. Python 3.12.11: Python interpreter used in this project
 
 ## About Logistic Regression
 Logistic Regression is a discriminative model that learns weight parameters to separate classes by maximizing the likelihood of correct class labels. In this project, multinomial Logistic Regression is used to classify flattened image feature vectors into 52 alphabet classes.
