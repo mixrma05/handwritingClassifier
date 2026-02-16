@@ -17,7 +17,7 @@ This project is a multi-class Machine Learning (ML) system that classifies handw
 Logistic Regression is a discriminative model that learns weight parameters to separate classes by maximizing the likelihood of correct class labels. In this project, multinomial Logistic Regression is used to classify flattened image feature vectors into 52 alphabet classes.
 
 ## Instructions For This Repository
-Once all the contents of this repository are downloaded (In the .zip format in most cases), the first step is to add a folder named **dataset/** within the main project directory. This is where all of the user's handwritten alphabets will be stored. Now, there are several rules concerning the alphabets. They are as follows:
+Once all the contents of this repository are downloaded (In the ```.zip``` format in most cases), the first step is to add a folder named **dataset/** within the main project directory. This is where all of the user's handwritten alphabets will be stored. Now, there are several rules concerning the alphabets. They are as follows:
 1. There will be 30 samples of each alphabet (A-Z and a-z). Meaning, 1560 samples (30 samples * (26 alphabets * 2 sets)).
 2. These alphabets must be written on a CLEAR white sheet of paper (Preferably A4 size) with a CLEAR, SMUDGE-FREE black pen (Preferably; Any other colour can also be used but darker colours yield best results).
 3. Clear images of each alphabet must be taken SEPARATELY (Both uppercase and lowercase). The user must make sure to crop the final image of each alphabet in such a way that the alphabet is right in the centre of the image. This level of accuracy is a must because that will make it easier for the model after training to recognise the alphabet and output the result accordingly.
@@ -29,7 +29,7 @@ After following these steps, once the 30 images of each uppercase and lowercase 
 
 *Note:* It is preferred to follow the naming convention for the image files and folders as specified above.
 
-Once all of this is done, head back to the main project directory and create a new folder named **savedModels/**. Leave it empty and do not add anything in it as this is the location of the training model file which will be saved here (In the .pkl format) once the model is trained with the aforementioned dataset.
+Once all of this is done, head back to the main project directory and create a new folder named **savedModels/**. Leave it empty and do not add anything in it as this is the location of the training model file which will be saved here (In the ```.pkl``` format) once the model is trained with the aforementioned dataset.
 
 ## Running This Project
 After following all of the above steps, it's finally time to run this project.<br/>
@@ -37,6 +37,6 @@ Open the main project directory in a terminal and run the command ```streamlit r
 
 *Note 1:* For the first time, the site will take some time as the model needs to be trained. But the model will be trained only once, and once it is done, the training model file will be saved in the **savedModels/** folder as mentioned above. This model does not need to be trained repeatedly, and starting from the second time onward, the user will be able to directly upload the pictures of their handwritten uppercase/lowercase alphabets for the model to predict and output.
 
-*Note 2:* On running the aforementioned command in the terminal, if the project does not open in the browser, it's mostly due to the browser not permitting http:// sites to load. To overcome this setback, the user must enable http:// websites to load, the settings for which can be found in the **Privacy**, **Security** or **Advanced Options** menus in the browser settings (Varies from browser to browser).
+*Note 2:* On running the aforementioned command in the terminal, if the project does not open in the browser, it's mostly due to the browser not permitting ```http://``` sites to load. To overcome this setback, the user must enable ```http://``` websites to load, the settings for which can be found in the **Privacy**, **Security** or **Advanced Options** menus in the browser settings (Varies from browser to browser).
 
-*Note 3:* Say, the user wants to add a demo recording of their project. Rather than placing the screen recording file (.mp4 or .mov) loosely in the main project directory, create a new folder within the main project directory named **demo/** and add the screen recording file of the project demo in it.
+*Note 3:* Say, the user wants to add a demo recording of their project. Rather than placing the screen recording file (```.mp4``` or ```.mov```) loosely in the main project directory, create a new folder within the main project directory named **demo/** and add the screen recording file of the project demo in it.
