@@ -9,7 +9,6 @@ from trainModel import trainModel
 st.title("Handwritten Alphabet Classification (A-Z)")
 st.write("Upload an image of your handwritten alphabet.")
 
-# Load or Train model
 model = loadModel()
 
 if model is None:
@@ -17,7 +16,6 @@ if model is None:
     model = trainModel()
     st.success("Model trained successfully!")
 
-# Upload image
 uploadedFile = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 if uploadedFile is not None:
